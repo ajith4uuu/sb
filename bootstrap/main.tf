@@ -1,6 +1,6 @@
 locals {
-  org_id           = "438382355301"
-  billing_account  = "01F05A-E75C68-8DDB94"
+  org_id           = "490404241018"
+  billing_account  = "012C9E-02C647-E8D293"
   bucket_location  = "EU"
   package_versions = jsondecode(file("${path.module}/cloudbuild_builder/packageVersions.json"))
   replica_locations_for_secrets = toset([
@@ -32,7 +32,7 @@ module "project" {
 
   prefix_id = "sdbx"
   labels = {
-    email          = "admin@sandbox.ajithtenneti.com"
+    email          = "admin.ajith@sb.gcp.telefonica.de"
     costid         = ""
     live           = "yes"
     environment    = "shr"
@@ -182,7 +182,7 @@ resource "google_cloudbuild_trigger" "master" {
 
   github {
     owner = "ajith4uuu"
-    name  = "sandbox"
+    name  = "sb"
     push {
       branch = "^main$"
     }
@@ -206,7 +206,7 @@ resource "google_cloudbuild_trigger" "pull_requests" {
 
   github {
     owner = "ajith4uuu"
-    name  = "sandbox"
+    name  = "sb"
     pull_request {
       branch = "^main$"
     }
