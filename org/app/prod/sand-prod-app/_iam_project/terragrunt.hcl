@@ -14,10 +14,10 @@ include {
 }
 
 dependency "parent" {
-  config_path = "../../sdbx-prod-app/"
+  config_path = "../../sand-prod-app/"
   mock_outputs = {
     project = {
-      project_id = "sdbx-prod-app"
+      project_id = "sand-prod-app"
     }
   }
 }
@@ -28,8 +28,8 @@ inputs = {
   project_id = dependency.parent.outputs.project.project_id
 
   editor_members = [
-    "user:admin@sandbox.ajithtenneti.com",
-    "user:ajith@ajithtenneti.com",
+    "user:admin.ajith@sb.gcp.telefonica.de",
+    "user:admin.sebastian@sb.gcp.telefonica.de",
   ]
 
 }
