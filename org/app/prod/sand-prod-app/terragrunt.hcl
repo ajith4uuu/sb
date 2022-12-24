@@ -26,7 +26,7 @@ inputs = {
 
   # Labels
   labels = {
-    email       = "admin@sandbox.ajithtenneti.com"
+    email       = "admin.ajith@sb.gcp.telefonica.de"
     costid      = ""
     live        = "yes"
     environment = "prod"
