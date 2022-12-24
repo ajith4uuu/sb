@@ -1,6 +1,6 @@
 {
     "name": "Ajith Dev Container - this container should already exist and it is built by bootstrap",
-    "image": "eu.gcr.io/sdbx-shr-terraform-e98d/shr-deploy-terraform:latest",
+    "image": "eu.gcr.io/sand-shr-terraform-cabf/shr-deploy-terraform:latest",
     "containerUser": "developer",
 
     "settings": {
