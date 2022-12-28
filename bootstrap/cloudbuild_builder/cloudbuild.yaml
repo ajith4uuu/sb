@@ -4,7 +4,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'build',
-      '--tag=eu.gcr.io/${PROJECT_ID}/shr-deploy-terraform',
+      '--tag=eu.gcr.io/sdbx-shr-terraform-e98d/shr-deploy-terraform',
       '--build-arg=CHECKOV_VERSION=${_CHECKOV_VERSION}',
       '--build-arg=MARKDOWNLINK_VERSION=${_MARKDOWNLINK_VERSION}',
       '--build-arg=MDL_VERSION=${_MDL_VERSION}',
@@ -18,7 +18,7 @@ steps:
       '.'
     ]
   # Test
-  - name: 'eu.gcr.io/${PROJECT_ID}/shr-deploy-terraform'
+  - name: 'eu.gcr.io/sdbx-shr-terraform-e98d/shr-deploy-terraform'
     entrypoint: /bin/bash
     args:
       - '-exEuo'
@@ -50,4 +50,4 @@ substitutions:
   _TGENV_VERSION: ''
   _TERRAFORM_VERSION: ''
   _TERRAGRUNT_VERSION: ''
-images: ['eu.gcr.io/${PROJECT_ID}/shr-deploy-terraform']
+images: ['eu.gcr.io/sdbx-shr-terraform-e98d/shr-deploy-terraform']

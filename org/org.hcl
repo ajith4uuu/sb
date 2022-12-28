@@ -9,7 +9,7 @@ remote_state {
   backend = "gcs"
   # Same state bucket for for all envs - resources are created in bootstrap folder
   config = {
-    bucket = "sand-shr-terraform-state"
+    bucket = "sb-shr-terraform-state"
     prefix = "org/${path_relative_to_include()}/terraform.tfstate"
   }
   generate = {
@@ -34,7 +34,7 @@ provider "google" {
 
 data "google_service_account_access_token" "default" {
   provider               = google.impersonate
-  target_service_account = "sand-shr-terraform@sand-shr-terraform-cabf.iam.gserviceaccount.com"
+  target_service_account = "sb-shr-terraform@sand-shr-terraform-178c.iam.gserviceaccount.com"
   scopes                 = ["userinfo-email", "cloud-platform"]
   lifetime               = "600s"
 }
@@ -65,7 +65,7 @@ inputs = {
 
   billing_account = "012C9E-02C647-E8D293"
   org_id          = "490404241018"
-  prefix_id       = "sand"
+  prefix_id       = "sb"
 
   policy_allowed_domain_ids = [
     # Cloud Identity Customer ID
