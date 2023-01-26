@@ -13,7 +13,7 @@ include {
 }
 
 dependency "parent" {
-  config_path = "../NQ10043558/"
+  config_path = "../../NQ10043558/"
   mock_outputs = {
     folder_id = "NQ10043558"
   }
