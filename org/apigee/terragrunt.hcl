@@ -12,17 +12,9 @@ include {
   path = find_in_parent_folders("org.hcl")
 }
 
-dependency "env" {
-  config_path = "../NQ10043558/"
-  mock_outputs = {
-    folder_id = "NQ10043558"
-  }
-}
-
 # These are the variables we have to pass in to use the module specified in the terragrunt configuration above
 inputs = {
 
-  parent_folder = dependency.env.outputs.folder_id
-  folder_name   = "NQ10043558"
+  folder_name = "apigee"
 
 }

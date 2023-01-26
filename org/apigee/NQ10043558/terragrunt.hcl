@@ -13,9 +13,9 @@ include {
 }
 
 dependency "parent" {
-  config_path = "../../NQ10043558/"
+  config_path = "../../apigee/"
   mock_outputs = {
-    folder_id = "NQ10043558"
+    folder_id = "apigee"
   }
 }
 
@@ -29,8 +29,8 @@ inputs = {
     email       = "admin.ajith@sb.gcp.telefonica.de"
     costid      = ""
     live        = "yes"
-    environment = "sandbox"
-    servicename = "NQ10043558"
+    environment = "NQ10043558"
+    servicename = "apigee"
   }
 
   services = [
