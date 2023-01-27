@@ -5,7 +5,7 @@ locals {
 
 terraform {
 
-  source = "github.com/terraform-google-modules/project-factory/google//modules/budget"
+  source = "github.com/ajith4uuu/terraform-modules/tree/main/billing"
 
 }
 
@@ -33,6 +33,5 @@ inputs = {
   amount = "100"
 
   alert_pubsub_topic = "projects/sb-shr-terraform-178c/subscriptions/sb-budget-capping-sub"
-
 
 }
