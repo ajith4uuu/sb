@@ -4,7 +4,7 @@ locals {
 }
 
 terraform {
-  source = "github.com/ajith4uuu/terraform-modules//stacks/iam_project?ref=v1.0.13"
+  source = "github.com/colt-net/terraform-modules//stacks/iam_project"
 
 }
 
