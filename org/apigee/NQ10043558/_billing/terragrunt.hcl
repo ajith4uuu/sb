@@ -5,7 +5,7 @@ locals {
 
 terraform {
 
-  source = "github.com/ajith4uuu/terraform-modules/tree/main/billing"
+  source = "github.com/terraform-google-modules/terraform-google-project-factory/tree/v14.1.0/modules/budget"
 
 }
 
